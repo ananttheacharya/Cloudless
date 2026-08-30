@@ -1,0 +1,72 @@
+/* Hallmark · macrostructure: Workbench · theme: Lumen (custom pink)
+ * Genre: Modern-Minimal / Editorial
+ */
+:root {
+  /* Lumen Base - Light Paper */
+  --color-paper: oklch(98% 0.01 280);
+  --color-paper-2: oklch(96% 0.01 280);
+  --color-paper-3: oklch(92% 0.01 280);
+  --color-ink: oklch(25% 0.02 280);
+  --color-ink-2: oklch(45% 0.02 280);
+  --color-ink-3: oklch(65% 0.02 280);
+  
+  /* Professional Pink Accent */
+  --color-accent: oklch(65% 0.15 350);
+  --color-accent-wash: oklch(95% 0.05 350);
+  
+  /* Typography - Lumen uses Instrument Serif for display, Geist/Inter for sans */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 96px;
+
+  /* UI Tokens */
+  --radius-sm: 0px; /* Sharp corners for enterprise/strict */
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --border-hairline: 1px solid var(--color-paper-3);
+  
+  /* Interaction */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400; /* Instrument Serif looks best regular */
+  margin: 0;
+  color: var(--color-ink);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Reset buttons */
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: var(--font-sans);
+}

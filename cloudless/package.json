@@ -1,0 +1,15 @@
+{
+  "name": "cloudless",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces"
+  },
+  "dependencies": {
+    "ssh2": "^1.17.0"
+  }
+}
